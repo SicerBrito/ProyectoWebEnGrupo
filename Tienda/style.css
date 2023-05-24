@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Oswald&display=swap%27');
+body{
+  background-image: url(./img/fondo.gif);
+  color: #8a8a8a;
+  display: flex;
+  font-family: 'Dongle', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  flex-direction: column;
+}
+
+.conte-padre{
+  position: relative;
+}
+
+.btn:hover{
+  transform: scale(0.9);
+}
+
+.container1{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  gap: 15%;
+  flex-wrap:nowrap;
+  width: 100%;
+  font-size: 25px;
+}
+
+.container1 a{
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  justify-content: center;
+  background-size: cover;
+  background: scroll;
+  height: inherit;
+  border-radius: 10px;
+  align-items: center;
+  
+  
+}
+.container1 a:hover{
+  transform: scale(1.2);
+  text-shadow: red -3px 0, cyan 3px 0;
+  cursor: pointer;
+  text-transform:uppercase;
+  animation-name: parpadeo;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 0.001s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+.parpadea {
+      
+      animation-name: parpadeo;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      
+      -webkit-animation-name:parpadeo;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+    }
+    
+    @-webkit-keyframes parpadeo {  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+      0% { opacity: 1.0; }
+      50% { opacity: 0.0; }
+      100% { opacity: 1.0; }
+  }
+.hover-effect {
+    padding: 0;
+    position: relative;
+    flex-direction: column;
+    text-decoration: none; 
+    color:antiquewhite;
+    height: 25%;
+    width: 100%;
+  }
+.hover-effect:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    right: 100%;
+    width: 100px;
+    height: 100px;
+    background-image: url("../Catalogo/img/nekoark.png");
+    background-size: 95%;
+    background-position:right center;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  footer .footer_main{
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #1c0080;
+  }
+  
+  footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+  }
+  
+  footer .footer_main .tag .social_link{
+    display: flex;
+  }
+  
+  footer .footer_main .tag .social_link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    position: relative;
+    margin: 0 5px;
+    z-index: 10;
+    overflow: hidden;
+  }
+  
+  
+  footer .footer_main .tag .social_link a:hover i{
+    color: white;
+  }
+  
+  footer .footer_main .tag .social_link a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -90px;
+    background: linear-gradient(-45deg, #c72092 , #6c14d0);
+    position: absolute;
+    z-index: -10;
+    transition: 0.5s;
+  }
+  
+  footer .footer_main .tag .social_link a:hover::after{
+    left: 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  a::before,
+  a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    background-color: #fff;
+  }
+  
+  a::before {
+    transform-origin: left;
+  }
+  
+  a::after {
+    transform-origin: right;
+  }
+  
+  a:hover::before,
+  a:hover::after {
+    transform: scaleX(1);
+  }
+/* prueba */

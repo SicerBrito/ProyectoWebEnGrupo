@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Inicio_Sesion/style.css">
+    <link rel="shortcut icon" href="/Inicio_Sesion/img/icon.png">
+    <script src="./Inicio_Sesion/js/jqueery.js" defer></script>
+    <title>Epsilon</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="validar.php" method="post" class="sign-in-form">
+                    <h2 class="signin title">Iniciar Sesión</h2>
+
+                    <div class="input-field">
+                        <i class="fas  fa-user"></i>
+                        <input type="text" name="usuario" id="usuario" required><br><br>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas  fa-lock"></i>
+                        <input type="password" name="contrasena" id="contrasena" required><br><br>
+                    </div>
+                    <a href="./Inicio/index.html"><input type="button" value="Ingresar" class="btn solid"></a>
+
+
+                    <p class="social-text">Inicia Sesión Con</p>
+                    
+                </form>
+
+                <form action="registro.php" method="post" class="sign-up-form">
+                    <h2 class="signup title">Registrate</h2>
+
+                    <div class="input-field">
+                        <i class="fas  fa-user"></i>
+                        <input type="text" placeholder="Usuario" id="usuario" required> 
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas  fa-lock"></i>
+                        <input type="password" placeholder="Contraseña" id="contrasena" required>
+                    </div>
+
+                    <a href="./Inicio/index.html"><input type="button" value="Registrarse" class="btn solid"></a>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>¿Nuevo Aquí?</h3>
+                    <p>Puedes crearte una cuenta totalmente gratuita aqui para disfrutar de mejor manera la experiencia.</p>
+                    <button class="btn transparent" id="sign-up-btn">Registrarse</button>
+                </div>
+
+                <img src="./Inicio_Sesion/img/212n.png" class="image" alt="Rock">
+            </div>
+
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>¿Ya eres parte?</h3>
+                    <p>Inicia sesión para no perderte ninguna novedad.</p>
+                    <button class="btn transparent" id="sign-in-btn">Iniciar Sesión</button>
+                </div>
+                <img src="./Inicio_Sesion/img/nichijou.png" class="image" alt="Rock">
+            </div>
+        </div>
+        <!-- finalizado inicio de sesion -->
+
+        
+    <script src="./img/undraw_maker_launch_crhe.svg" crossorigin="anonymous"></script>
+    <script src="./js/jqueery.js"></script>
+
+
+    
+</body>
+</html>
